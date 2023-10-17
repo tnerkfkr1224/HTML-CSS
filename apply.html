@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="utf-8" />
+            <meta name="description" content="Web development" />
+            <meta name="keywords"    content="HTML Markup"  />
+            <meta name="author"      content="put your name here"/>
+            <link href="styles/desktop.css" rel="stylesheet" media="screen and (min-width:768px)"/>
+            <link href="styles/mobile_phone.css" rel="stylesheet" media="screen and (max-width:480px)" />
+            <script src="scripts/apply.js"></script>
+            <script src="scripts/enhancement2.js"></script>
+            <title>Web develope Assignment2</title>
+<style>
+    body{
+         background-image: url('images/apply.jpeg');
+         background-repeat: no-repeat;        
+         background-size: 1000px 1000px;
+    }
+</style>
+</head>
+<body>
+
+        <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+           <header><h1 id="jobs"><em>Software Developer//Designer</em></h1></header>
+
+            <!-- Horizontal Menu -->
+            <nav>
+                   <a href="index.html">Home</a>
+                   <a href="about.html">About</a>
+                   <a href="jobs.html">Jobs</a>
+                   <a href="apply.html">Apply</a>
+                   <a href="mailto:103535673@student.swin.edu.au">Email</a>
+                   <a href="enhancement.html">Enhancement</a>
+                   <a href="enhancement2.html">Enhancement2</a>                   
+            </nav>
+      <!-- fieldset -->
+              <fieldset>  
+                    
+                    <p>
+                        <label>Job reference number:</label>
+                        <input id="refnumber" type="text" name="refnumber" maxlength="8" size="8" pattern="[A-Za-z0-9]{5}" required="required" onblur="Functa()" readonly/> 
+                   </p>
+
+                     <p>
+                        <label>First name:*</label>
+                         <input type="text" id="firstname" name="First name" maxlength="20" size="20" pattern="[A-Za-z]{1,20}" required="required" onblur="Functa()"/>
+                    </p>
+
+                     <p>
+                        <label>Last name:*</label>
+                         <input type="text" id="lastname" name="Lastname" maxlength="20" size="20" pattern="[A-Za-z]{1,20}"  required="required" onblur="Functa()"/>
+                     </p>
+
+                     <p>
+                        <label for="DOB">Date of birth:*</label>
+                        <input type="text" name="dob" id="DOB" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" maxlength="10" size="10" required="required"/>
+                        <span id="spanText"></span>
+                        
+                     </p>
+                          
+                                        
+                            <fieldset id="Gender">
+                                  <p>    
+                                    <label>Gender:*</label>
+                                      <label>Mail</label>
+                                      <input type="radio" id="mail" name="Gender" value="Mail" required="required"/>
+                                      <label>Femail</label>
+                                      <input type="radio" id="femail" name="Gender" value="Femail" required="required"/>
+                                      <label>Other</label>
+                                      <input type="radio" id="other" name="Gender" value="Other" required="required"/>
+                                 </p>  
+                            </fieldset>
+                  
+                 
+                   
+                    <p>
+                        <label>Street Address:*</label>
+                              <input type="text" id="street" name="Street Address" maxlength="40" required="required" onblur="Functa()"/> 
+                    </p>      
+                    <p>
+                        <label>Suburb/town:*</label>
+                         <input type="text" id="town" name="Suburb/town" maxlength="40" required="required" onblur="Functa()"/>
+                    </p>
+
+                  
+                    <p>
+                        <label>State:* </label>
+                           <select name="State" id="State">
+                                <option value="NSW">NSW</option>
+                                <option value="VIC">VIC</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                         </select>
+                    </p>
+
+                   
+                    <p>
+                        <label for="Postcode">Postcode:*</label>
+                          <input type="text" id="Postcode"
+                          name="Postcode" maxlength="4" size="4" pattern="\d{4}" required="required"/>
+                          <span id="spanPost"></span>
+                    </p>
+
+                   
+                   
+                    <p>
+                        <label>Email address:*</label>
+                           <input type="email" id="email" name="Email address" placeholder="name@domain.com" required="required" onblur="Functa()"/> 
+                    </p>
+
+                   
+                    <p>
+                        <label>Phone number:*</label> 
+                           <input type="tel" id="phone" name="phone" placeholder="#### ### ###" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" required="required"/>
+                     </p>
+
+             
+                       
+                            <fieldset id="skill2">
+                                <p>Skill list:*</p>
+                                      <p><label>C++</label>
+                                      <input type="checkbox" id="C/C+" name="C/C+"/></p>
+                                      <p><label for="XML">XML</label>
+                                      <input type="checkbox" id="XML" name="XML"/></p>
+                                      <p><label for="Java">Java</label>
+                                      <input type="checkbox" id="Java" name="Java"/></p>
+                                      <p><label>Other_Skills</label>
+                                      <input type="checkbox"  id="skill" name="textbox" required="required"/>
+                                      <textarea name="comments" id="otherText" cols="20">
+                                      </textarea></p>
+                                      <span id="spanskill"></span> 
+                            </fieldset>                                            
+                    </fieldset>
+            <input type="submit" value="Apply"/>
+        </form>
+
+<!-- Ad Sidebar -->
+       <aside>We are growing fast and searching for top Systems Developer with experience leading and managing Testing teams</aside>
+
+
+
+<!-- Copyright Notice -->
+<footer>Author: Han,H&M,CTS</footer>
+
+</body>
+</html>
+
