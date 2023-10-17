@@ -1,0 +1,166 @@
+@media screen and (min-width: 1024px) { 
+}
+/* Style the main structure */
+  header {
+    font: 700 2em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .625em 3.5em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+      background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+
+/* Animate Background Image */
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: aitf 80s linear infinite;
+
+
+/* Activate hardware acceleration for smoother animations */
+      -webkit-transform: translate3d(0,0,0);
+      -webkit-backface-visibility: hidden;
+     }
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+
+@keyframes scale2 {
+    0% {transform: scale(1);}
+    100% {transform: scale(0);}
+}
+
+nav{
+     padding: .625em 3.5em;
+     background-color: white;
+     list-style-type:none;
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+    background-color: #ffde22; 
+    border-right: 1px solid white;
+    border-style:dotted; 
+    font-size: 1em;
+    padding: .825em 4.5em;
+}
+
+main{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+aside {
+    float:right;
+    width:30%;
+    font-size:15px ;
+    font-style:italic;
+    color:green;
+    border-style:dotted; 
+}
+
+footer{
+    clear: both;
+    color: black;
+    background-color: #DCC7AA;
+}
+
+.survey_color{
+    color: white;
+    background-color: black;
+    font-family: "Lucida Console", "Courier New", monospace;  
+}
+
+.colorc{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color:grey;
+
+}
+
+/* Style division.css*/
+#jobs2{
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  animation: rotate_image 6s linear infinite,scale2 6s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+
+/* Clearfix (clear floats) */
+.row:after {
+  clear: both;
+  display: table;
+}
+
+span{
+    text-shadow: #aaa 2px 2px 2px;
+    text-align: left;
+    font-size: 40px;
+}
+
+div{
+     text-shadow: #aaa 2px 2px 2px;
+     text-align: left;
+}
+
+/* Style the navigation bar */
+a:hover{
+    background-color: white;
+}
+
+ul{
+    list-style-type: square;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+ol ul{
+    list-style-type: square;
+}
+
+/* Style form elements */
+
+legend,label{
+     font-family: "Lucida Console", "Courier New", monospace;
+     font-size: 15px;
+}
+
+fieldset{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 8px;
+}
+
+table{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:1em;
+    border: 1px solid #999;
+}
+
+/* Group */
+div,footer,span,a,h3,article{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h2,p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 2em;
+}
+
+
+
